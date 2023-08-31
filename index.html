@@ -1,0 +1,212 @@
+<!doctype html>
+<html translate="no">
+
+<head>
+    <meta charset="utf-8" />
+    <title> MOMO V2 Swap</title>
+    <meta name="description" content="Swap or provide liquidity on the Uniswap Protocol" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="./logo.png" />
+    <link rel="apple-touch-icon" sizes="512x512" href="./logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="theme-color" content="#FC72FF" />
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src 'self' https://www.google-analytics.com https://www.googletagmanager.com 'unsafe-inline'" />
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="preconnect" href="https://www.google-analytics.com/" />
+    <link rel="preload" href="./fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin />
+    <style>
+        .twitter_img {
+            width: 18px;
+        }
+
+        * {
+            font-family: Inter, sans-serif;
+            box-sizing: border-box
+        }
+
+        @font-face {
+            font-family: 'Inter custom';
+            font-weight: 100 900;
+            font-style: normal;
+            font-display: block;
+            font-named-instance: Regular;
+            src: url(fonts/Inter-roman.var.woff2) format('woff2 supports variations(gvar)'), url(fonts/Inter-roman.var.woff2) format('woff2-variations'), url(fonts/Inter-roman.var.woff2) format('woff2')
+        }
+
+        @supports (font-variation-settings:normal) {
+            * {
+                font-family: 'Inter custom', sans-serif
+            }
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0
+        }
+
+        button {
+            user-select: none
+        }
+
+        html {
+            font-size: 16px;
+            font-variant: none;
+            font-smooth: always;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        #background-radial-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            pointer-events: none;
+            width: 200vw;
+            height: 200vh;
+            transform: translate(-50vw, -100vh);
+            z-index: -1
+        }
+
+        #root,
+        body,
+        html {
+            min-height: 100%
+        }
+
+        @media (prefers-color-scheme:dark) {
+            html {
+                background: linear-gradient(180deg, #202738 0, #070816 100%)
+            }
+        }
+
+        @media (prefers-color-scheme:light) {
+            html {
+                background: radial-gradient(100% 100% at 50% 0, rgba(255, 184, 226, .51) 0, rgba(255, 255, 255, 0) 100%), #fff
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="./custom.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <link href="./static/css/6.5543dfc1.chunk.css" rel="stylesheet">
+    <link href="./static/css/main.a6827371.chunk.css" rel="stylesheet">
+</head>
+
+<body><noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+        <div>&emsp;</div>
+    </div>
+    <div id="background-radial-gradient"></div>
+    <script>!function (e) { function c(c) { for (var d, t, a = c[0], o = c[1], u = c[2], i = 0, l = []; i < a.length; i++)t = a[i], Object.prototype.hasOwnProperty.call(r, t) && r[t] && l.push(r[t][0]), r[t] = 0; for (d in o) Object.prototype.hasOwnProperty.call(o, d) && (e[d] = o[d]); for (b && b(c); l.length;)l.shift()(); return n.push.apply(n, u || []), f() } function f() { for (var e, c = 0; c < n.length; c++) { for (var f = n[c], d = !0, t = 1; t < f.length; t++) { var o = f[t]; 0 !== r[o] && (d = !1) } d && (n.splice(c--, 1), e = a(a.s = f[0])) } return e } var d = {}, t = { 5: 0 }, r = { 5: 0 }, n = []; function a(c) { if (d[c]) return d[c].exports; var f = d[c] = { i: c, l: !1, exports: {} }; return e[c].call(f.exports, f, f.exports, a), f.l = !0, f.exports } a.e = function (e) { var c = []; t[e] ? c.push(t[e]) : 0 !== t[e] && { 9: 1, 10: 1, 11: 1, 12: 1, 17: 1, 18: 1 }[e] && c.push(t[e] = new Promise((function (c, f) { for (var d = "static/css/" + ({}[e] || e) + "." + { 0: "31d6cfe0", 1: "31d6cfe0", 2: "31d6cfe0", 3: "31d6cfe0", 7: "31d6cfe0", 8: "31d6cfe0", 9: "37d0e96b", 10: "5ee76afc", 11: "0aab3e1b", 12: "d5b3cfe3", 13: "31d6cfe0", 14: "31d6cfe0", 15: "31d6cfe0", 16: "31d6cfe0", 17: "7829c767", 18: "5b749c5c", 19: "31d6cfe0", 20: "31d6cfe0", 21: "31d6cfe0", 22: "31d6cfe0", 23: "31d6cfe0", 24: "31d6cfe0", 25: "31d6cfe0", 26: "31d6cfe0", 27: "31d6cfe0", 28: "31d6cfe0", 29: "31d6cfe0", 30: "31d6cfe0", 31: "31d6cfe0", 32: "31d6cfe0", 33: "31d6cfe0", 34: "31d6cfe0", 35: "31d6cfe0", 36: "31d6cfe0", 37: "31d6cfe0", 38: "31d6cfe0", 39: "31d6cfe0", 40: "31d6cfe0", 41: "31d6cfe0", 42: "31d6cfe0", 43: "31d6cfe0", 44: "31d6cfe0", 45: "31d6cfe0", 46: "31d6cfe0", 47: "31d6cfe0", 48: "31d6cfe0", 49: "31d6cfe0", 50: "31d6cfe0", 51: "31d6cfe0", 52: "31d6cfe0", 53: "31d6cfe0", 54: "31d6cfe0", 55: "31d6cfe0", 56: "31d6cfe0", 57: "31d6cfe0", 58: "31d6cfe0", 59: "31d6cfe0", 60: "31d6cfe0", 61: "31d6cfe0", 62: "31d6cfe0", 63: "31d6cfe0", 64: "31d6cfe0", 65: "31d6cfe0", 66: "31d6cfe0", 67: "31d6cfe0", 68: "31d6cfe0", 69: "31d6cfe0", 70: "31d6cfe0", 71: "31d6cfe0", 72: "31d6cfe0", 73: "31d6cfe0", 74: "31d6cfe0", 75: "31d6cfe0", 76: "31d6cfe0", 77: "31d6cfe0", 78: "31d6cfe0", 79: "31d6cfe0", 80: "31d6cfe0", 81: "31d6cfe0", 82: "31d6cfe0", 83: "31d6cfe0", 84: "31d6cfe0", 85: "31d6cfe0", 86: "31d6cfe0", 87: "31d6cfe0" }[e] + ".chunk.css", r = a.p + d, n = document.getElementsByTagName("link"), o = 0; o < n.length; o++) { var u = (b = n[o]).getAttribute("data-href") || b.getAttribute("href"); if ("stylesheet" === b.rel && (u === d || u === r)) return c() } var i = document.getElementsByTagName("style"); for (o = 0; o < i.length; o++) { var b; if ((u = (b = i[o]).getAttribute("data-href")) === d || u === r) return c() } var l = document.createElement("link"); l.rel = "stylesheet", l.type = "text/css", l.onload = c, l.onerror = function (c) { var d = c && c.target && c.target.src || r, n = new Error("Loading CSS chunk " + e + " failed.\n(" + d + ")"); n.code = "CSS_CHUNK_LOAD_FAILED", n.request = d, delete t[e], l.parentNode.removeChild(l), f(n) }, l.href = r, document.getElementsByTagName("head")[0].appendChild(l) })).then((function () { t[e] = 0 }))); var f = r[e]; if (0 !== f) if (f) c.push(f[2]); else { var d = new Promise((function (c, d) { f = r[e] = [c, d] })); c.push(f[2] = d); var n, o = document.createElement("script"); o.charset = "utf-8", o.timeout = 120, a.nc && o.setAttribute("nonce", a.nc), o.src = function (e) { return a.p + "static/js/" + ({}[e] || e) + "." + { 0: "6d155eff", 1: "4938c554", 2: "3f899e46", 3: "6d0031ac", 7: "3536642c", 8: "ffa28a96", 9: "831f74c1", 10: "d81ef68b", 11: "3c3eed6c", 12: "02337004", 13: "c660356a", 14: "3aac75cd", 15: "c8e1a75f", 16: "65ce7edd", 17: "39222117", 18: "8ddaa883", 19: "41f546ed", 20: "7971c0c3", 21: "443e428c", 22: "4047cfe8", 23: "256cfafb", 24: "9835f985", 25: "bbfad489", 26: "348f99fd", 27: "a63adebc", 28: "21852f29", 29: "0e0d74df", 30: "d051b942", 31: "d5b8206a", 32: "7f2b2f09", 33: "758f629d", 34: "37e681d2", 35: "29adce79", 36: "db2e4cb6", 37: "74c2e6d1", 38: "e6081e31", 39: "78fc1fda", 40: "6da897b6", 41: "bea0d14c", 42: "32ef5b1d", 43: "88bdbb83", 44: "16396216", 45: "da81fd5b", 46: "7f75a575", 47: "1ed2a6c9", 48: "7279ca5b", 49: "31c999dd", 50: "7f79b4ed", 51: "ff1de380", 52: "5f071021", 53: "f418990e", 54: "0666cb32", 55: "3a5a833d", 56: "1bbad10d", 57: "ab0f1e28", 58: "9245e676", 59: "9d7b5126", 60: "90fe4212", 61: "d3ea2c41", 62: "0362d0c4", 63: "b9e488db", 64: "71423a8a", 65: "60a7c8a8", 66: "9a481b19", 67: "bb7f6f7d", 68: "b3ea6b32", 69: "af7512a4", 70: "6804abaf", 71: "4f920402", 72: "4cc1c8f2", 73: "5b1cf0ee", 74: "2b648e31", 75: "5873c03c", 76: "1962dbe9", 77: "be13dcb9", 78: "6b8d5a05", 79: "0d9efd4d", 80: "e65f27a2", 81: "58be56f2", 82: "34e7c371", 83: "74077810", 84: "bd6fac53", 85: "2f894228", 86: "20005622", 87: "30ad53f4" }[e] + ".chunk.js" }(e); var u = new Error; n = function (c) { o.onerror = o.onload = null, clearTimeout(i); var f = r[e]; if (0 !== f) { if (f) { var d = c && ("load" === c.type ? "missing" : c.type), t = c && c.target && c.target.src; u.message = "Loading chunk " + e + " failed.\n(" + d + ": " + t + ")", u.name = "ChunkLoadError", u.type = d, u.request = t, f[1](u) } r[e] = void 0 } }; var i = setTimeout((function () { n({ type: "timeout", target: o }) }), 12e4); o.onerror = o.onload = n, document.head.appendChild(o) } return Promise.all(c) }, a.m = e, a.c = d, a.d = function (e, c, f) { a.o(e, c) || Object.defineProperty(e, c, { enumerable: !0, get: f }) }, a.r = function (e) { "undefined" != typeof Symbol && Symbol.toStringTag && Object.defineProperty(e, Symbol.toStringTag, { value: "Module" }), Object.defineProperty(e, "__esModule", { value: !0 }) }, a.t = function (e, c) { if (1 & c && (e = a(e)), 8 & c) return e; if (4 & c && "object" == typeof e && e && e.__esModule) return e; var f = Object.create(null); if (a.r(f), Object.defineProperty(f, "default", { enumerable: !0, value: e }), 2 & c && "string" != typeof e) for (var d in e) a.d(f, d, function (c) { return e[c] }.bind(null, d)); return f }, a.n = function (e) { var c = e && e.__esModule ? function () { return e.default } : function () { return e }; return a.d(c, "a", c), c }, a.o = function (e, c) { return Object.prototype.hasOwnProperty.call(e, c) }, a.p = "./", a.oe = function (e) { throw console.error(e), e }; var o = this["webpackJsonp@uniswap/interface"] = this["webpackJsonp@uniswap/interface"] || [], u = o.push.bind(o); o.push = c, o = o.slice(); for (var i = 0; i < o.length; i++)c(o[i]); var b = u; f() }([])</script>
+    <script src="./static/js/6.31ad7a0c.chunk.js"></script>
+    <script src="./static/js/main.bde674f3.chunk.js"></script>
+
+    <script>
+        function toggleClickDisplay() {
+            const testClickElement = document.querySelector('.mcs_items');
+            console.log("testClickElement", testClickElement)
+            if (testClickElement) {
+                testClickElement.classList.add('hidden'); // Add the 'hidden' class
+            }
+        }
+        var intervalId1 = setInterval(function () {
+            var anchorElement = document.querySelector('.active');
+            console.log("anchorElement", anchorElement)
+            if (anchorElement) {
+                clearInterval(intervalId1);
+                // Add an event listener to the anchor element
+                anchorElement.addEventListener('click', function (event) {
+                    console.log('toggle now')
+                    toggleClickDisplay()
+                });
+            }
+        }, 1000); // Check every 1 second
+    </script>
+    <script>
+        var intervalId = setInterval(function () {
+            var socialLinksContainer = document.querySelector('.social_links');
+            if (socialLinksContainer) {
+                clearInterval(intervalId);
+
+                var twitterLink = document.createElement('a');
+                twitterLink.href = 'https://twitter.com/momoerc';
+                twitterLink.target = '_blank';
+                twitterLink.rel = 'noopener noreferrer';
+
+                var twitterImg = document.createElement('img');
+                twitterImg.className = 'twitter_img';
+                twitterImg.src = './twitter.png';
+
+                twitterLink.appendChild(twitterImg);
+                socialLinksContainer.appendChild(twitterLink);
+            }
+        }, 1000); // Check every 1 second
+    </script>
+
+
+    <script>
+        // Function to toggle the display of the .test_click element
+        function toggleTestClickDisplay() {
+            const testClickElement = document.querySelector('.mcs_items');
+
+            if (testClickElement) {
+                const siblings = testClickElement.parentElement.children;
+
+                for (const sibling of siblings) {
+                    if (sibling !== testClickElement) {
+                        if (sibling.classList.contains('hidden')) {
+                            sibling.classList.remove('hidden');
+                            sibling.classList.add('block');
+                        } else if (sibling.classList.contains('block')) {
+                            sibling.classList.remove('block');
+                            sibling.classList.add('hidden');
+                        }
+                    }
+                }
+
+                if (testClickElement.classList.contains('hidden')) {
+                    testClickElement.classList.remove('hidden');
+                    testClickElement.classList.add('block');
+                } else if (testClickElement.classList.contains('block')) {
+                    testClickElement.classList.remove('block');
+                    testClickElement.classList.add('hidden');
+                }
+            }
+        }
+
+        // Function to check if the element with the given class name exists
+        function checkAndPrependImage() {
+            const sidebarElement = document.querySelector('.my_custom_sidebar');
+
+            // Check if the sidebar element exists and has a positive size
+            if (sidebarElement && sidebarElement.offsetHeight > 0) {
+                // Create the image element
+                const imageElement = document.createElement('img');
+                imageElement.src = '/menu.png';
+                imageElement.alt = '';
+
+                // Add a click event listener to the image element
+                imageElement.addEventListener('click', () => {
+                    toggleTestClickDisplay();
+                });
+
+                // Insert the image element as the first child of the sidebar
+                sidebarElement.insertBefore(imageElement, sidebarElement.firstChild);
+
+                // Clear the interval since the task is done
+                clearInterval(checkInterval);
+            }
+        }
+
+        // Set an interval to check and prepend the image
+        const checkInterval = setInterval(checkAndPrependImage, 1000); // Check every 1 second
+    </script>
+
+</body>
+
+</html>
